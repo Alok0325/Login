@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <form id="contact-form" action="/submit-contact" method="POST">
+            <!-- Name -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <!-- Phone Number -->
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <!-- Loan Type Dropdown -->
+            <label for="loan-type">Select Loan Type:</label>
+            <select id="loan-type" name="loan-type" required>
+                <option value="">--Select Loan--</option>
+                <option value="home-loan">Home Loan</option>
+                <option value="personal-loan">Personal Loan</option>
+                <option value="car-loan">Car Loan</option>
+                <option value="education-loan">Education Loan</option>
+                <option value="business-loan">Business Loan</option>
+            </select><br><br>
+
+            <!-- Reason for Loan -->
+            <label for="reason">Reason for Loan:</label>
+            <textarea id="reason" name="reason" rows="4" required></textarea><br><br>
+
+            <!-- Submit Button -->
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
