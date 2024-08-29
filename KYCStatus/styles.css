@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.progress-bar {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    position: relative;
+    padding: 0 30px;
+}
+
+.step {
+    text-align: center;
+}
+
+.bullet {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+    color: black;
+}
+
+.green {
+    background-color: green;
+}
+
+.red {
+    background-color: red;
+}
+
+.status-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#kyc-status {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}

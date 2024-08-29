@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYC Status</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="home">
+        <div class="progress-bar">
+            <div class="step">
+                <div class="bullet blue">
+                    <span>1</span>
+                </div>
+                <p>Incomplete KYC</p>
+            </div>
+            <div class="step">
+                <div class="bullet yellow">
+                    <span>2</span>
+                </div>
+                <p>Pending KYC</p>
+            </div>
+            <div class="step">
+                <div class="bullet green">
+                    <span>3</span>
+                </div>
+                <p>KYC Completed</p>
+            </div>
+            <div class="step">
+                <div class="bullet red">
+                    <span>4</span>
+                </div>
+                <p>Rejected</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="status-container">
+        <h2>KYC Status</h2>
+        <div id="kyc-status">
+            <!-- Status will be shown here -->
+        </div>
+    </section>
+
+    <script src="status.js"></script>
+</body>
+</html>
