@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  padding-top: 7%;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url('bg.jpg'); /* Replace 'bg.jpg' with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.contract {
+  padding-top: 20%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 70%;
+  max-width: 100%;
+}
+
+.pdf-container {
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  height: 600px;
+  overflow: auto;
+}
+
+.agreement {
+  text-align: center;
+}
+
+.agreement input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.agreement button {
+  background-color: #7d2ae8;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.agreement button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.agreement button:not(:disabled):hover {
+  background-color: #5a1dbb;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  body {
+    padding-top: 5%;
+  }
+  
+  .contract {
+    padding: 15px;
+    width: 90%;
+  }
+
+  .pdf-container {
+    height: 500px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contract {
+    width: 100%;
+    padding: 10px;
+    padding-top: 10%;
+  }
+
+  .pdf-container {
+    height: 400px;
+  }
+
+  .agreement button {
+    width: 100%;
+    margin-top: 15px;
+    margin-left: 0;
+  }
+}
