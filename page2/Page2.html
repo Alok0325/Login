@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="page2.css">
+</head>
+<body>
+     <!-- Progress Bar -->
+   <section>  
+    <div class="progress-bar">
+        <div class="step">
+            <div class="bullet active">
+                <span>1</span>
+            </div>
+            <p>Login/Sign Up</p>
+        </div>
+        <div class="step">
+            <div class="bullet active">
+                <span>2</span>
+            </div>
+            <p>Upload Documents</p>
+        </div>
+        <div class="step">
+            <div class="bullet">
+                <span>3</span>
+            </div>
+            <p>Contract Agreement</p>
+        </div>
+    </div>
+</section>
+    <!----------------------------------->
+
+ <section class="form" id="form">
+    
+        <form id="kyc-form" action="/submit-kyc" method="POST" enctype="multipart/form-data">
+            <!-- PAN Section -->
+            <label for="pan-number">PAN Number:</label>
+            <input type="text" id="pan-number" name="pan-number" required maxlength="10"><br><br>
+    
+            <label for="pan-photo">Upload PAN Photo:</label>
+            <input type="file" id="pan-photo" name="pan-photo" accept="image/*" required><br><br>
+    
+            <!-- Aadhaar Section -->
+            <label for="aadhaar-number">Aadhaar Number:</label>
+            <input type="text" id="aadhaar-number" name="aadhaar-number" required maxlength="12"><br><br>
+    
+            <label for="aadhaar-photo">Upload Aadhaar Photo:</label>
+            <input type="file" id="aadhaar-photo" name="aadhaar-photo" accept="image/*" required><br><br>
+    
+            <!-- Address Section -->
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea><br><br>
+    
+            <!-- Selfie Section -->
+            <label for="profile-picture">Upload Profile Picture:</label>
+            <input type="file" id="profile-picture" name="profile-picture" accept="image/*" required><br><br>
+    
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    
+        <canvas id="selfie-canvas" style="display:none;"></canvas>
+        
+ </section>
+ <script src="page2.js"></script>
+</body>
+</html>
